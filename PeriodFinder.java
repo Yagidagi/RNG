@@ -1,8 +1,9 @@
-class Driver 
+class PeriodFinder
 {
 	public static void main(String[] args) 
 	{
    	     RNG gen = new RNG();
+		
 
 		for (int i=0;i<gen.getM();i++)
 		{
