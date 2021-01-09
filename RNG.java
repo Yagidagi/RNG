@@ -63,6 +63,12 @@ public class RNG
 		return state;
 	}
 
+	public int nextInt(int i)
+	{
+		state = (i*a+b)%m;
+		return i;
+	}
+
 	public static void find(int[] arr)
 	{
 		System.out.println("Modulus: " + findM(arr));
