@@ -20,7 +20,7 @@ class PeriodFinder
 						System.out.print(temp + ",");
 						result += temp;
         					}
-				System.out.print("   " + result + "   " + gen.getA()+ gen.getB());
+				System.out.print("   Sum: " + result + "   A: " + gen.getA()+ "   B: " +gen.getB());
 				System.out.println();
 			}
 		}
