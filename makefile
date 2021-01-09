@@ -1,11 +1,9 @@
 all:
 	javac *.java
 
-run: RNG.class
-	java RNG $(ARGS)
-
-Coder.class: RNG.java
-	javac RNG.java
+run: Main.class
+	javac *.java
+	java Main $(ARGS)
 
 clean: 
 	rm *.class

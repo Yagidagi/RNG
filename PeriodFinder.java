@@ -1,9 +1,11 @@
 class PeriodFinder
 {
-	public static void main(String[] args) 
+
+
+	public static void show(String str) 
 	{
-   	     RNG gen = new RNG();
-		
+		RNG gen= new RNG();
+		gen.setM(Integer.parseInt(str));
 
 		for (int i=0;i<gen.getM();i++)
 		{
@@ -15,7 +17,7 @@ class PeriodFinder
 				for (int k = 0; k < gen.getM(); k++) 
 					{
 						int temp = gen.nextInt();
-						System.out.print(temp);
+						System.out.print(temp + ",");
 						result += temp;
         					}
 				System.out.print("   " + result + "   " + gen.getA()+ gen.getB());

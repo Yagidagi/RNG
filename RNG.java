@@ -5,7 +5,7 @@ public class RNG
 	{
 	
 		
-		int[] arr = {720555190, 133143292, 350469176, 715002068, 822810950, 400865843, 226553034, 200183345};
+		int[] arr = {6,5,0,7,2,1,4,3};
 		find(arr);
 
 
@@ -65,12 +65,9 @@ public class RNG
 
 	public static void find(int[] arr)
 	{
-		int x = findM(arr);
-		int y = findA(arr);
-		int z = findB(arr);
-		System.out.println("Modulus: " + x);
-		System.out.println("Multiplier: " + y);
-		System.out.println("Increment: " + z);
+		System.out.println("Modulus: " + findM(arr));
+		System.out.println("Multiplier: " + findA(arr));
+		System.out.println("Increment: " + findB(arr));
 	}
 
 	public static int findA(int[] arr)
@@ -78,6 +75,8 @@ public class RNG
 		int x = arr[2]-arr[3];
 		int y = arr[1]-arr[2];
 		int m = findM(arr);
+		x = ((x % m) +m)%m;
+		y = ((y % m) +m)%m;
 		int a = x * modInv(y, m);
 		a = ((a % m) +m)%m;
 		return a;
