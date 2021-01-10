@@ -13,6 +13,12 @@ public class Main
 			a.show(args[1]);
 		}
 
+		if (args[0].equalsIgnoreCase("showunique"))
+		{
+			PeriodFinder a = new PeriodFinder();
+			a.showUnique(args[1]);
+		}
+
 		if (args[0].equalsIgnoreCase("break"))
 		{
 			String[] strarr = args[1].replaceAll("\\[", "").replaceAll("\\]", "").replaceAll("\\s", "").split(",");
