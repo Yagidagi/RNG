@@ -10,7 +10,7 @@ make run ARGS="break [7,6,8,4,12,9,2,3,1,5,10,0,7]"
     You can enter any sequence of numbers in the brackets, but in this format. This finds M, A and B
 make run ARGS="Show 16"
     You can enter any integer. This lists all combinations of A and B for M=16
-make run ARGS="Show 16"
+make run ARGS="Showunique 16"
     You can enter any integer. This lists all combinations of A and B for M=16 that cycles through all numbers of the mod
 make run ARGS="int"
     You get random integer from 0 to 7 inclusive. (This has to generate a random number at some point)
