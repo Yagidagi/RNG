@@ -1,4 +1,10 @@
-Directions for use
+Setup:
+
+git clone git@github.com:Yagidagi/RNG
+cd RNG
+make 
+
+Directions for use:
 
 make run ARGS="break [7,6,8,4,12,9,2,3,1,5,10,0,7]"
     You can enter any sequence of numbers in the brackets, but in this format. This finds M, A and B
