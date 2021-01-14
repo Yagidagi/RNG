@@ -2,7 +2,7 @@ Presentation:
 
 https://docs.google.com/presentation/d/e/2PACX-1vTBKZbsHgobUGl3wx4YF40_WigxOZDZH5UcWqrO-ca9i9Fb599Th6Hfi3iNi91mqxCUJcMxTZW_yt2G/pub?start=false&loop=false&delayms=3000
 
-Setup:
+Setup (This is run on Java):
 
 git clone git@github.com:Yagidagi/RNG
 cd RNG
